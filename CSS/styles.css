@@ -1,0 +1,243 @@
+/* ================================================= 
+   Base Element Styles
+==================================================== */
+
+* { 
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Prompt', sans-serif;
+  line-height: 1.6;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+main {
+  background-color: #fff;
+  max-width: 1200px;
+  padding-top: 5%;
+}
+
+h3 {
+  padding: 10px;
+}
+  
+img {
+   max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+span {
+  font-weight: bold;
+}
+
+hr {
+  width: 100%;
+  color: #f5f5f5;
+}
+  
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: left; 
+  align-items: baseline;
+ }
+
+ /* ================================================= 
+   Mobile layout
+==================================================== */
+
+ @media (min-width: 320px) {
+
+  .wrapper {
+  margin: 0 auto;
+  min-height: 100vh;
+  max-width: 930px;
+ }
+
+ .top-nav, .top-list {
+  margin: 10px;
+  padding: 0;
+  list-style: none;
+  font-weight: 800;
+  gap: 1em;
+  line-height: 2.25;
+}
+
+.top-list {
+  text-decoration: none;
+  background-color: #fff;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  justify-content: space-between;
+}
+
+.text {
+  
+  text-align: center;
+  margin: 5% 5%; 
+}
+
+.profile-img {
+  
+  max-width: 300px;
+  margin-top: auto;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.contact {
+  margin: 0 auto;
+}
+
+.name {
+  flex: 2 0 0;
+}
+
+.bottom-nav {
+  display: none;
+}
+
+}
+
+/* ================================================= 
+   Tablet layout
+==================================================== */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .top-nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .top-list {
+  background-color: #f5f5f5;
+}
+
+  .intro {
+    flex-direction: row-reverse;
+  }
+
+  .text {
+    text-align: justify;
+    margin-right: 5%;
+    margin-top: 0px;
+  }
+
+  .flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0 auto;
+}
+
+  .flex-item {
+    max-width: 45%;
+  }
+
+  .contact {
+    max-width: 60%;
+  }
+
+  .back-to-top {
+    display: none;
+  }
+
+  .bottom-nav {
+    display: flex;
+    gap: 1em;
+}
+
+}
+
+/* ================================================= 
+   Desktop layout
+==================================================== */
+
+@media (min-width: 1024px) {
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .top-nav {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-right: 0px;
+  }
+
+    .top-list {
+  background-color: #f5f5f5;
+}
+
+  .intro {
+    flex-direction: row-reverse;
+    margin-top: 0%;
+    align-items: flex-start;
+  }
+
+  .text {
+    max-width: 60%;
+    text-align: justify;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  .flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0 auto;
+}
+
+  .flex-item {
+    max-width: 30%;
+  }
+
+  .contact {
+    max-width: 60%;
+  }
+
+  .back-to-top {
+    display: none;
+  }
+
+  .bottom-nav {
+    display: flex;
+    gap: 1em;
+  }
+
+}
